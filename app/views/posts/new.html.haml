@@ -1,0 +1,9 @@
+.content__title
+  商品追加
+  
+= form_with model: @post, class: :form, local: true do |form|
+  = form.text_field :title, placeholder: :商品名, class: :form__title
+  = form.text_area :content, placeholder: :説明, class: :form__text
+  = form.label :image 
+  = form.file_field :image 
+  = form.submit '投稿する', class: :form__btn
