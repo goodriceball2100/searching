@@ -1,5 +1,6 @@
 body{
   background-color: #f6f6f6;
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/81%2BX70pOMNL._SY355_.jpg);
   min-width: 650px;
   .header{
     height: 56px;
@@ -39,9 +40,11 @@ body{
       &__left{
         padding-right: 20px;
         &--image{
-          height: 55px;
           width: 55px;
-          border: solid 1px;
+	        height: 55px;
+          border-radius: 50%;
+          background: skyblue;
+
         }
       }
       &__right{
@@ -82,7 +85,9 @@ body{
     .search-form{
       text-align: center;
       padding: 20px;
+      font-size: 20px;
     }
+      
     .postDate{
       font-size: 15px;
       color: #999;
